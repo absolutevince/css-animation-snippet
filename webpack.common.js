@@ -10,7 +10,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      tempate: "./src/template.html",
+      template: "./src/template.html",
     }),
   ],
   module: {

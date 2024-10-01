@@ -1,6 +1,7 @@
 # Webpack Basic Template
 
 ## package.json
+
 ```
 {
   "name": "webpack-template",
@@ -26,7 +27,9 @@
   }
 }
 ```
+
 ## webpack.common.json
+
 ```
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
@@ -40,7 +43,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      tempate: "./src/template.html",
+      template: "./src/index.html",
     }),
   ],
   module: {
@@ -63,6 +66,7 @@ module.exports = {
 ```
 
 ## webpack.prod.js
+
 ```
 const { merge } = require("webpack-merge");
 const common = require("./webpack.common.js");
@@ -73,6 +77,7 @@ module.exports = merge(common, {
 ```
 
 ## webpack.dev.js
+
 ```
 const { merge } = require("webpack-merge");
 const common = require("./webpack.dev.js");

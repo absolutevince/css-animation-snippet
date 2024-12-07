@@ -1,0 +1,4 @@
+.navigation {
+  border-right: 1px solid var(--clr-bg-secondary);
+  padding-right: 3rem;
+}
